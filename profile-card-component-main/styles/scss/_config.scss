@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/// FONT
+$font-stack: "Kumbh Sans", sans-serif;
+$font-size: 18px;
+
+/// LAYOUT
+$width-mobile: 375px;
+$width-app: 1440px;
+
+/// PRIMARY COLORS
+$color-primary-cyan: hsl(185, 75%, 39%);
+$color-primary-dark-blue: hsl(229, 23%, 23%);
+$color-primary-blue: hsl(227, 10%, 46%);
+
+/// OTHER COLORS
+$color-dark-grey: hsl(0, 0%, 59%);
+$color-grey-light: hsl(0, 0%, 89%);

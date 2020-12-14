@@ -1,0 +1,43 @@
+@import "config";
+@import "card";
+@import "containers";
+* {
+  font-size: $font-size;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.5;
+  margin: 0;
+  font-family: $font-stack;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h3 + span {
+  color: $color-dark-grey;
+  margin-left: 0.5rem;
+}
+
+.text-grey {
+  color: $color-dark-grey;
+}
