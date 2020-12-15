@@ -50,12 +50,12 @@
   height: 100vh;
   background-color: #19a2ae;
   overflow: hidden;
+  display: inline-block;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 .main::before {
   content: "";
-  display: block;
   background: url(/images/bg-pattern-top.svg) 100% no-repeat;
   background-size: contain;
   background-position: center;
@@ -68,7 +68,6 @@
 }
 .main::after {
   content: "";
-  display: block;
   background: url(/images/bg-pattern-bottom.svg) 100% no-repeat;
   background-size: contain;
   background-position: center;
@@ -79,11 +78,42 @@
   position: absolute;
   z-index: -1;
 }
+.main * {
+  z-index: 0;
+}
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  font-size: 0.7rem;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.attribution a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 2px;
+  background: white;
+  width: 0px;
+  transition: all 0.3s ease;
+}
+.attribution a:hover::after {
+  width: 100%;
 }
 
 * {
@@ -93,6 +123,11 @@
   line-height: 1.5;
   margin: 0;
   font-family: "Kumbh Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .flex {

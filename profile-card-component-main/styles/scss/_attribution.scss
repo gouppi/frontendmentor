@@ -1,0 +1,30 @@
+.attribution {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+
+  a {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    font-size: 0.7rem;
+    border-bottom: 2px solid transparent;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 2px;
+      background: white;
+      width: 0px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

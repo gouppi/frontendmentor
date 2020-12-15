@@ -3,13 +3,13 @@
   height: 100vh;
   background-color: $color-primary-cyan;
   overflow: hidden;
+  display: inline-block;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 
   &::before {
     content: "";
-    display: block;
-    background: url(/images/bg-pattern-top.svg) 100% no-repeat; //100% no-repeat center;
+    background: url(/images/bg-pattern-top.svg) 100% no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -21,8 +21,7 @@
   }
   &::after {
     content: "";
-    display: block;
-    background: url(/images/bg-pattern-bottom.svg) 100% no-repeat; //100% no-repeat center;
+    background: url(/images/bg-pattern-bottom.svg) 100% no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -31,6 +30,10 @@
     right: -50%;
     position: absolute;
     z-index: -1;
+  }
+
+  & * {
+    z-index: 0;
   }
 }
 

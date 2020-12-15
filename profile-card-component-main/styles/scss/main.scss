@@ -1,6 +1,7 @@
 @import "config";
 @import "card";
 @import "containers";
+@import "attribution";
 * {
   font-size: $font-size;
   box-sizing: border-box;
@@ -8,6 +9,11 @@
   line-height: 1.5;
   margin: 0;
   font-family: $font-stack;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .flex {
