@@ -1,0 +1,61 @@
+.p1 {
+  padding: 1rem;
+}
+.p2 {
+  padding: 2rem;
+}
+.p3 {
+  padding: 3rem;
+}
+
+.py1 {
+  padding: 0 1rem;
+}
+
+.px1 {
+  padding: 1rem 0;
+}
+
+.mb-1 {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: flex-row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.container {
+  max-width: $width_desktop;
+}

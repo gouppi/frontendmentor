@@ -1,0 +1,36 @@
+@media (max-width: $breakpoint-mobile) {
+  .card {
+    padding: 1rem;
+    position: relative;
+    flex-direction: column !important;
+    max-width: $width_mobile;
+    .card-faq {
+      padding-top: 5rem;
+      padding-right: 0;
+      width: 100%;
+      margin: 0;
+      .card-faq-list {
+        padding: 0 0.5rem;
+      }
+      .card-faq-head {
+        text-align: center;
+      }
+    }
+    .card-image-container {
+      display: none;
+    }
+    .card-image-mobile-container {
+      display: block;
+      .card-image-mobile-feature {
+        top: -22%;
+        position: absolute;
+        left: 10%;
+      }
+      .card-image-mobile-bg {
+        top: -1%;
+        position: absolute;
+        left: 17%;
+      }
+    }
+  }
+}

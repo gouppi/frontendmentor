@@ -1,0 +1,35 @@
+// WIDTH
+$width_mobile: 375px;
+$width_desktop: 1440px;
+
+// COLORS
+
+$color_dark_blue: hsl(238, 29%, 16%);
+$color_soft_red: hsl(14, 88%, 65%);
+
+// Gradient
+
+// Background gradient:
+
+$gradient_violet: hsl(273, 75%, 66%);
+$gradient_blue: hsl(240, 73%, 65%);
+
+// ### Neutral
+
+// #### Text
+
+$text_very_dark_blue: hsl(237, 12%, 33%);
+$text_dark_blue: hsl(240, 6%, 50%);
+
+// #### Dividers
+
+$color_divider_blue: hsl(240, 5%, 91%);
+
+// ## Typography
+
+// ### Body Copy
+
+$font-size: 12px;
+$font-family: "Kumbh Sans", sans-serif;
+
+$breakpoint-mobile: 1200px;

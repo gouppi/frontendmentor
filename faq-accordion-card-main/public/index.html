@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <div class="main-content flex justify-center align-center">
+      <div class="card flex flex-row justify-center align-center">
+        <div class="card-image-mobile-container">
+          <img
+            class="card-image-mobile-feature"
+            src="images/illustration-woman-online-mobile.svg"
+          />
+          <img
+            class="card-image-mobile-bg"
+            src="images/bg-pattern-mobile.svg"
+          />
+        </div>
+        <div class="card-image-container">
+          <img class="image-box" src="images/illustration-box-desktop.svg" />
+          <div class="card-image-background-container">
+            <img
+              class="image-feature"
+              src="images/illustration-woman-online-desktop.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="card-faq flex flex-col justify-center">
+          <h1 class="card-faq-head mb-1">FAQ</h1>
+          <ul id="card-faq-list" class="card-faq-list">
+            <li class="card-faq-row">
+              <button class="card-faq-row-head">
+                How many team members can I invite?
+              </button>
+              <div class="card-faq-row-body">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </div>
+            </li>
+            <li class="card-faq-row open">
+              <button class="card-faq-row-head">
+                What is the maximum file upload size?
+              </button>
+              <div class="card-faq-row-body">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </li>
+            <li class="card-faq-row">
+              <button class="card-faq-row-head">
+                How do I reset my password?
+              </button>
+              <div class="card-faq-row-body">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </li>
+            <li class="card-faq-row">
+              <button class="card-faq-row-head">
+                Can I cancel my subscription?
+              </button>
+              <div class="card-faq-row-body">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </div>
+            </li>
+            <li class="card-faq-row">
+              <button class="card-faq-row-head">
+                Do you provide additional support?
+              </button>
+              <div class="card-faq-row-body">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="/public/js/button.js"></script>
+  </body>
+</html>

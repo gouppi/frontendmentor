@@ -1,0 +1,101 @@
+.card {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  max-width: 80%;
+  width: 65%;
+
+  & > div {
+    flex: 1;
+  }
+}
+
+.card-image-mobile-container {
+  display: none;
+}
+
+.card-image-container {
+  position: relative;
+  img.image-box {
+    display: block;
+    position: absolute;
+    left: -6rem;
+    bottom: 6.5rem;
+  }
+  .card-image-background-container {
+    padding: 4rem 0;
+    background: url(/public/images/bg-pattern-desktop.svg);
+    background-position: center right;
+    width: 400px;
+    background-position-y: 66%;
+    overflow: hidden;
+    background-position-x: 101%;
+    background-repeat: no-repeat;
+    img.image-feature {
+      margin-left: -5rem;
+    }
+  }
+}
+
+.card-faq {
+  padding-right: 4rem;
+  margin-left: 5rem;
+  .card-faq-list {
+    list-style: none;
+
+    .card-faq-row {
+      border-bottom: 1px solid $color_divider_blue;
+      padding-bottom: 1rem;
+      margin: 1rem 0;
+
+      .card-faq-row-head {
+        text-align: left;
+        background: none;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: $text_very_dark_blue;
+
+        &::focus {
+          outline: none;
+        }
+
+        &:hover {
+          color: black;
+        }
+
+        &::after {
+          content: url("/public/images/icon-arrow-down.svg");
+          margin-right: 1rem;
+        }
+      }
+      .card-faq-row-body {
+        display: none;
+      }
+
+      &.open {
+        .card-faq-row-head {
+          font-weight: 700;
+          color: black;
+
+          &::after {
+            content: url("/public/images/icon-arrow-down.svg");
+            transform: rotate(180deg);
+            transition: transform 0.5s;
+          }
+        }
+        .card-faq-row-body {
+          margin-top: 1rem;
+          display: block;
+          font-size: 13px;
+          color: $text_dark_blue;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
