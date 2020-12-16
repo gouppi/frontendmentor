@@ -1,0 +1,40 @@
+.card {
+  padding: 4rem 2rem;
+  background-color: $color_primary;
+  margin-bottom: auto;
+  &.mt-1 {
+    margin-top: 2rem;
+  }
+  &.mt-2 {
+    margin-top: 4rem;
+  }
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+  border-radius: 15px;
+  .avatar {
+    border-radius: 50%;
+    width: 48px;
+    margin-right: 1rem;
+  }
+
+  .name {
+    color: white;
+    font-weight: 500;
+  }
+  .title {
+    color: $color_accent;
+    font-weight: 400;
+  }
+
+  .quote {
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .card-column {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}

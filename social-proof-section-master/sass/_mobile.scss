@@ -1,0 +1,44 @@
+@media (max-width: 1000px) {
+  .mobile-col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 2rem auto auto auto;
+    .flex-col {
+      width: 100%;
+    }
+  }
+
+  h1.main-title {
+    text-align: center;
+    width: 100%;
+  }
+  p.main-lead {
+    text-align: center;
+    padding-right: 0;
+  }
+  .rating-bar {
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .stars {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .m-right,
+  .m-left {
+    margin: 1rem;
+  }
+
+  .card:not(:last-of-type) {
+    margin-right: 0;
+  }
+}

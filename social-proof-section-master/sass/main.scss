@@ -1,0 +1,92 @@
+@import "config";
+@import "rating";
+@import "card";
+@import "attribution";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  &::before {
+    content: url("/images/bg-pattern-top-desktop.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: url("/images/bg-pattern-bottom-desktop.svg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  &.main-title {
+    margin-bottom: 1rem;
+    // padding-right: 13rem;
+    width: 50%;
+    color: $color_primary;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}
+
+p {
+  &.main-lead {
+    color: $color_primary;
+    padding-right: 10rem;
+  }
+}
+
+.my-3 {
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  max-width: $width_desktop;
+  //   height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 5rem auto;
+}
+
+.m-left {
+  margin-left: auto;
+}
+
+.m-right {
+  margin-right: auto;
+}
+
+.align-center {
+  align-items: center;
+}
+
+@import "mobile";

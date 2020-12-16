@@ -1,0 +1,24 @@
+.rating-bar {
+  background-color: $color_light;
+  height: 3.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 5rem;
+
+  h3 {
+    color: $color_primary;
+    font-size: 1rem;
+  }
+
+  .stars {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .star::before {
+    content: url("/images/icon-star.svg");
+    margin-right: 0.5rem;
+  }
+}
