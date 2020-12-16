@@ -25,7 +25,7 @@
   }
   .card-image-background-container {
     padding: 4rem 0;
-    background: url(/public/images/bg-pattern-desktop.svg);
+    background: url("/images/bg-pattern-desktop.svg");
     background-position: center right;
     width: 400px;
     background-position-y: 66%;
@@ -69,7 +69,7 @@
         }
 
         &::after {
-          content: url("/public/images/icon-arrow-down.svg");
+          content: url("/images/icon-arrow-down.svg");
           margin-right: 1rem;
         }
       }
@@ -83,7 +83,7 @@
           color: black;
 
           &::after {
-            content: url("/public/images/icon-arrow-down.svg");
+            content: url("/images/icon-arrow-down.svg");
             transform: rotate(180deg);
             transition: transform 0.5s;
           }
