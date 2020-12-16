@@ -3,13 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
     left: 0;
     right: 0;
-    margin: 2rem auto auto auto;
     .flex-col {
       width: 100%;
     }
+    margin-top: 3rem;
   }
 
   h1.main-title {
@@ -40,5 +39,10 @@
 
   .card:not(:last-of-type) {
     margin-right: 0;
+  }
+
+  .card.mt-1,
+  .card.mt-2 {
+    margin-top: 2rem;
   }
 }

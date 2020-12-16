@@ -71,6 +71,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   font-family: "Spartan", sans-serif;
 }
 body::before {
@@ -152,10 +156,9 @@ p.main-lead {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
     left: 0;
     right: 0;
-    margin: 2rem auto auto auto;
+    margin-top: 3rem;
   }
   .mobile-col .flex-col {
     width: 100%;
@@ -192,6 +195,11 @@ p.main-lead {
 
   .card:not(:last-of-type) {
     margin-right: 0;
+  }
+
+  .card.mt-1,
+.card.mt-2 {
+    margin-top: 2rem;
   }
 }
 
