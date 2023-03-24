@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+    
+    <div class="card">
+      <div class="card__results">
+        <h1>Your Result</h1>
+        <div class="card__results-scores">
+            <p class="card__results-score--info"><span>76</span>of 100</p>
+        </div>
+        <div class="card__results-footer">
+          <p><span>Great</span>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      <div class="card__right">
+        <p>Summary</p>
+        <ul class="card__summaries">
+          <li class="card__summary card__summary--red">
+            <div class="card__icon--group">
+              <div class="card__icon card__icon--red"></div>
+              <span class="card__text card__text--red">Reaction</span>
+            </div>  
+            <span class="card__score"><strong>80</strong>/ 100</span>
+          </li>
+          <li class="card__summary card__summary--yellow">
+            <div class="card__icon--group">
+              <div class="card__icon card__icon--yellow"></div>
+              <span class="card__text card__text--yellow">Memory</span>
+            </div>
+            <span class="card__score"><strong>92</strong>/ 100</span>
+          </li>
+          <li class="card__summary card__summary--green">
+            <div class="card__icon--group">
+              <div class="card__icon card__icon--green"></div>
+              <span class="card__text card__text--green">Verbal</span>
+            </div>
+            <span class="card__score"><strong>61</strong>/ 100</span>
+          </li>
+          <li class="card__summary card__summary--blue">
+            <div class="card__icon--group">
+              <div class="card__icon card__icon--blue"></div>
+              <span class="card__text card__text--blue">Visual</span>
+            </div>
+            <span class="card__score"><strong>72</strong>/ 100</span>
+          </li>
+        </ul>
+        <button class="card__button">Continue</button>
+      </div>
+    </div>
+</body>
+</html>

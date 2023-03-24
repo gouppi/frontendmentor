@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Hanken Grotesk, 'sans-serif';
+    font-size: 18px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 4px 7px 10px 2px hsla(241, 100%, 89%, 0.2)
+}
+
+.card__right {
+    width: 50%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: hsl(221, 100%, 96%);
+    justify-content: space-between;
+}
+
+.card__results {
+    text-align: center;
+    width: 50%;
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.card__results h1 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.card__results-scores {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 160px;
+    max-width: 100%;
+    border-radius: 100%;
+    padding: 1rem;
+    justify-content: center;
+    aspect-ratio: 1;
+    margin: 0 auto;
+
+}
+
+.card__results-score {
+    font-weight: bold;
+}
+
+.card__results-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 1rem;
+}
+
+.card__results-footer span {
+    padding-bottom: 1rem;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.card__results-score--info {
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+
+}
+
+.card__results-score--info span {
+    color: white;
+    display: block;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card__summaries {
+    padding: 0;
+
+}
+
+.card__summary {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.card__icon--group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.card__text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card__icon--red {
+    background: url('/assets/images/icon-reaction.svg') no-repeat;
+}
+
+
+.card__icon--yellow {
+    background: url('/assets/images/icon-memory.svg') no-repeat;
+}
+
+.card__icon--blue {
+    background: url('/assets/images/icon-visual.svg') no-repeat;
+}
+
+.card__icon--green {
+    background: url('/assets/images/icon-verbal.svg') no-repeat;
+}
+
+.card__summary {
+    padding: 8px 1rem;
+    border-radius: 8px;
+}
+
+.card__summary--red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.card__summary--yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%)
+}
+
+.card__summary--green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%)
+}
+
+.card__summary--blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%)
+}
+
+.card__button {
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1rem 2rem;
+    border-radius: 36px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    transition: all 1s;
+
+}
+
+.card__button:hover,
+.card__button:active {
+    background-image: linear-gradient(to top, hsla(234, 85%, 45%, 0.86), hsla(256, 72%, 46%, 1));
+}
+
+.card__score {
+    color: gray;
+    font-size: 14px;
+}
+
+.card__score>strong {
+    margin-right: 8px;
+    color: black;
+}
+
+@media only screen and (max-device-width: 375px) {
+    body {
+        height: auto;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card__right {
+        width: 100%;
+    }
+
+    .card__results {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
