@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    margin: 1rem;
+}
+
+p {
+    margin-top: 0;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 343px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* .card--image {
+    background: url("./images/image-product-desktop.jpg") no-repeat;
+    background-size: cover;
+    height: 240px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-position: center;
+} */
+
+.card--image {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+.card--segment {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 6px;
+}
+
+.card--title {
+    margin-bottom: 1rem;
+    font-family: Fraunces;
+}
+
+.card--data {
+    padding: 1rem;
+}
+
+.card--pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card--price {
+    font-family: Fraunces;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+s {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button.button--cart::before {
+    content: url(./images/icon-cart.svg);
+    height: 20px;
+    margin-right: 8px;
+}
+
+.button.button--cart:hover,
+.button.button--cart:active {
+    background-color: hwb(158 14% 76%);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    body,
+    html {
+        display: grid;
+        height: 100%;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    /* .card--image {
+        height: 300px;
+    } */
+
+    .card--image {
+        aspect-ratio: 2/3;
+        object-fit: contain;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        max-height: 450px;
+    }
+
+
+
+}
